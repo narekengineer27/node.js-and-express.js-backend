@@ -1,0 +1,61 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon --exec babel-node --presets babel-preset-env ./bin/www",
+    "test": " mocha --require babel-core/register tests/ --exit",
+    "models": "sequelize-auto -o /src/models -d template -h localhost -u root -p 3306  -e mysql"
+  },
+  "dependencies": {
+    "adm-zip": "^0.4.13",
+    "async": "^3.1.0",
+    "aws-sdk": "^2.551.0",
+    "babel-cli": "^6.26.0",
+    "babel-node": "0.0.1-security",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-3": "^6.17.0",
+    "bcrypt": "^3.0.6",
+    "body-parser": "~1.18.2",
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "cookie-parser": "~1.4.3",
+    "cron": "^1.7.2",
+    "crypto-random-string": "^3.0.1",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "express-session": "^1.15.6",
+    "jsonwebtoken": "^8.1.0",
+    "lodash": "^4.17.15",
+    "mocha": "^5.2.0",
+    "morgan": "~1.9.0",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.7.0",
+    "nodemailer": "^4.6.2",
+    "nodemon": "^1.19.3",
+    "path": "^0.12.7",
+    "pdfkit": "^0.11.0",
+    "plaid": "^4.3.0",
+    "sequelize": "^4.28.6",
+    "sequelize-auto": "^0.4.29",
+    "serve-favicon": "~2.4.5",
+    "sinon": "^6.1.5",
+    "socket.io": "^2.3.0",
+    "stripe": "^7.14.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.6.1",
+    "sequelize-cli": "^5.5.1"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}
